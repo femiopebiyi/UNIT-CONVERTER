@@ -1,0 +1,153 @@
+};
+        if (convert.value && converted.value === 'grams'){
+            let outcome = Number(this.value)*1
+            result.innerText = outcome + ' ' + converted.value
+        } 
+        else if (convert.value === 'grams' && converted.value === 'kilograms') {
+            let outcome = Number(this.value) * 0.001;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'grams' && converted.value === 'ounces') {
+            let outcome = Number(this.value) * 0.035274;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'grams' && converted.value === 'pounds') {
+            let outcome = Number(this.value) * 0.002205;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'grams' && converted.value === 'us-tons') {
+            let outcome = Number(this.value) * 0.0000011023;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'grams' && converted.value === 'uk-tons') {
+            let outcome = Number(this.value) * 0.000000984;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'grams' && converted.value === 'tons') {
+            let outcome = Number(this.value) * 0.000001;
+            result.innerText = outcome + ' ' + converted.value;
+        } ;
+
+        // OUNCES
+        if (convert.value && converted.value === 'ounces'){
+            let outcome = Number(this.value)*1
+            result.innerText = outcome + ' ' + converted.value
+        } 
+                if (convert.value === 'ounces' && converted.value === 'kilograms') {
+            let outcome = Number(this.value) * 0.0283495;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'ounces' && converted.value === 'grams') {
+            let outcome = Number(this.value) * 28.3495;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'ounces' && converted.value === 'pounds') {
+            let outcome = Number(this.value) * 0.0625;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'ounces' && converted.value === 'us-tons') {
+            let outcome = Number(this.value) * 0.00003125;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'ounces' && converted.value === 'uk-tons') {
+            let outcome = Number(this.value) * 0.0000279018;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'ounces' && converted.value === 'tons') {
+            let outcome = Number(this.value) * 0.0000283495;
+            result.innerText = outcome + ' ' + converted.value;
+        };
+
+        // POUNDS
+        if (convert.value && converted.value === 'pounds'){
+            let outcome = Number(this.value)*1
+            result.innerText = outcome + ' ' + converted.value
+        } 
+                if (convert.value === 'pounds' && converted.value === 'grams') {
+            let outcome = Number(this.value) * 453.592;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'pounds' && converted.value === 'ounces') {
+            let outcome = Number(this.value) * 16;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'pounds' && converted.value === 'kilograms') {
+            let outcome = Number(this.value) * 0.453592;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'pounds' && converted.value === 'us-tons') {
+            let outcome = Number(this.value) * 0.0005;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'pounds' && converted.value === 'uk-tons') {
+            let outcome = Number(this.value) * 0.000446;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'pounds' && converted.value === 'tons') {
+            let outcome = Number(this.value) * 0.0005;
+            result.innerText = outcome + ' ' + converted.value;
+        };
+
+        // US-TONS
+        if (convert.value && converted.value === 'us-tons'){
+            let outcome = Number(this.value)*1
+            result.innerText = outcome + ' ' + converted.value
+        } 
+                if (convert.value === 'us-tons' && converted.value === 'grams') {
+            let outcome = Number(this.value) * 907185;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'us-tons' && converted.value === 'ounces') {
+            let outcome = Number(this.value) * 32000;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'us-tons' && converted.value === 'kilograms') {
+            let outcome = Number(this.value) * 907.185;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'us-tons' && converted.value === 'pounds') {
+            let outcome = Number(this.value) * 2000;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'us-tons' && converted.value === 'uk-tons') {
+            let outcome = Number(this.value) * 0.892857;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'us-tons' && converted.value === 'tons') {
+            let outcome = Number(this.value) * 0.91;
+            result.innerText = outcome + ' ' + converted.value;
+        };
+
+        //UK-TONS
+
+        if (convert.value && converted.value === 'uk-tons'){
+            let outcome = Number(this.value)*1
+            result.innerText = outcome + ' ' + converted.value
+        } 
+            else if (convert.value === 'uk-tons' && converted.value === 'grams') {
+            let outcome = Number(this.value) * 1016047.67;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'uk-tons' && converted.value === 'ounces') {
+            let outcome = Number(this.value) * 35840;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'uk-tons' && converted.value === 'kilograms') {
+            let outcome = Number(this.value) * 1016.04767;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'uk-tons' && converted.value === 'pounds') {
+            let outcome = Number(this.value) * 2240;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'uk-tons' && converted.value === 'us-tons') {
+            let outcome = Number(this.value) * 1.12;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'uk-tons' && converted.value === 'tons') {
+            let outcome = Number(this.value) * 5;
+            result.innerText = outcome + ' ' + converted.value;
+        };
+
+    // TONS
+        if (convert.value && converted.value === 'tons'){
+            let outcome = Number(this.value)*1
+            result.innerText = outcome + ' ' + converted.value
+        } 
+        else if (convert.value === 'tons' && converted.value === 'grams') {
+            let outcome = Number(this.value) * 1000000;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'tons' && converted.value === 'ounces') {
+            let outcome = Number(this.value) * 35273.96;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'tons' && converted.value === 'kilograms') {
+            let outcome = Number(this.value) * 1000;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'tons' && converted.value === 'pounds') {
+            let outcome = Number(this.value) * 2204.62;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'tons' && converted.value === 'us-tons') {
+            let outcome = Number(this.value) * 1.10231;
+            result.innerText = outcome + ' ' + converted.value;
+        } else if (convert.value === 'tons' && converted.value === 'uk-tons') {
+            let outcome = Number(this.value) * 0.984207;
+            result.innerText = outcome + ' ' + converted.value;
+        };
+
+    })
+

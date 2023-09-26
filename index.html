@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIT CONVERTER</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h1>UNIT CONVERTING WEBSITE</h1>
+        <h3>CONVERT ANY VALUES</h3>
+    </div>
+    <ul class="value-list">
+        <div class="mass">
+            <li class="values">MASS FROM:</li>
+            <select name="" id="from" onchange="convertUnit()">
+                <option value="kilograms">kilograms</option>
+                <option value="grams">grams</option>
+                <option value="ounces">ounces</option>
+                <option value="pounds">pounds</option>
+                <option value="us-tons">US tons</option>
+                <option value="uk-tons">UK tons</option>
+                <option value="tons">tons</option>
+            </select>
+            <li>TO:</li>
+            <select name="" id="convert-to" onchange="convertUnit()">
+                <option value="kilograms">kilograms</option>
+                <option value="grams">grams</option>
+                <option value="ounces">ounces</option>
+                <option value="pounds">pounds</option>
+                <option value="us-tons">US tons</option>
+                <option value="uk-tons">UK tons</option>
+                <option value="tons">tons</option>
+            </select>
+        </div>
+        
+        
+    </ul>
+    <p class="outcome">RESULT</p>
+    <div class="input">
+        <input type="text" placeholder="Input Value Here">
+    
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
