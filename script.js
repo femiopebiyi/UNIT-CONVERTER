@@ -2,7 +2,31 @@ const convert = document.querySelector('#from')
 const converted = document.querySelector('#convert-to')
 let result = document.querySelector('p');
 const inputValue = document.querySelector('input');
+let buttons = document.querySelectorAll('.units')
+// let tempButton = document.querySelector('.temp-button')
+// let lengthButton = document.querySelector('.length-button')
+// let timeButton = document.querySelector('.time-button')
 
+buttons.forEach(function(button){
+    button.addEventListener('click', function(){
+        button.classList.toggle('clicked')
+        buttons.forEach(function(otherButton){
+            if(otherButton !== button){
+                otherButton.classList.remove('clicked')
+            }
+        })
+    })
+})
+
+    // MASS
+
+
+massButton.addEventListener('click', function(){
+    tempButton.classList.remove('clicked')
+    lengthButton.classList.remove('clicked')
+    timeButton.classList.remove('clicked')
+    
+})
 
 
         function convertUnit (){
@@ -174,6 +198,9 @@ const inputValue = document.querySelector('input');
 
     inputValue.addEventListener('keyup', function (){
         convertUnit()
-
-
     });
+
+
+
+    //TEMPERATURES
+

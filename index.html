@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNIT CONVERTER</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <div class="header">
         <h1>UNIT CONVERTING WEBSITE</h1>
         <h3>CONVERT ANY VALUES</h3>
     </div>
+
+    <ul class="unitslist">
+        <button class="units mass-button clicked">MASS</button>
+        <button class="units temp-button">TEMPERATURE</button>
+        <button class="units length-button">LENGTH</button>
+        <button class="units time-button">TIME</button>
+        <!-- <button>temp</button>
+        <button>temp</button>
+        <button>temp</button> -->
+    </ul>
+
     <ul class="value-list">
         <div class="mass">
             <li class="values">MASS FROM:</li>
@@ -24,7 +35,7 @@
                 <option value="uk-tons">UK tons</option>
                 <option value="tons">tons</option>
             </select>
-            <li>TO:</li>
+            <li class="values">TO:</li>
             <select name="" id="convert-to" onchange="convertUnit()">
                 <option value="kilograms">kilograms</option>
                 <option value="grams">grams</option>
