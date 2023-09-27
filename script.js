@@ -197,7 +197,13 @@ buttons.forEach(function(button){
 
 
     inputValue.addEventListener('keyup', function (){
-        convertUnit()
+        if(isNaN(inputValue.value*5)){
+            result.innerHTML = 'Please Input Number Only!!!'
+        }
+        else{
+            convertUnit()
+        }
+        
     });
 
 

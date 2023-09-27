@@ -81,6 +81,7 @@ select{
 input{
     height: 100%;
     background-color: #87CEEB;
+    border-radius: 40px;
 }
 input::placeholder{
     font-weight: bold;
@@ -99,4 +100,3 @@ textarea{
         margin-top: 30px;
     }
 
-    
