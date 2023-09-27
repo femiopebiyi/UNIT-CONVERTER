@@ -21,12 +21,12 @@ buttons.forEach(function(button){
     // MASS
 
 
-massButton.addEventListener('click', function(){
-    tempButton.classList.remove('clicked')
-    lengthButton.classList.remove('clicked')
-    timeButton.classList.remove('clicked')
+// massButton.addEventListener('click', function(){
+//     tempButton.classList.remove('clicked')
+//     lengthButton.classList.remove('clicked')
+//     timeButton.classList.remove('clicked')
     
-})
+// })
 
 
         function convertUnit (){
