@@ -1,4 +1,10 @@
+
+
 buttons[1].addEventListener('click', function(){
+    
+    inputValue.placeholder = 'Input Here, default = 0'
+    
+    
     convert.innerHTML = `
     <option value="celcius">Celcius</option>
     <option value="fahrenheits">Fahrenheits</option>
@@ -11,6 +17,7 @@ buttons[1].addEventListener('click', function(){
     `
     convertTempUnit()
     values[0].innerHTML = 'TEMP FROM:'
+    result.innerHTML = 'RESULT'
 })
 
 function convertTempUnit(){
@@ -52,5 +59,10 @@ function convertTempUnit(){
 }
 
 inputValue.addEventListener('keyup', function(){
-    convertTempUnit()
+if(isNaN(inputValue.value*5)){
+            result.innerHTML = 'Please Input Numbers Only!!!'
+        }
+        else{
+            convertTempUnit()
+        }
 })

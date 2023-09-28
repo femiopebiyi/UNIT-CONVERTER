@@ -27,6 +27,7 @@ buttons[0].addEventListener('click', function(){
     `
     values[0].innerHTML = 'MASS FROM:'
     convertMassUnit()
+    inputValue.placeholder = 'Input Value Here'
 })
 buttons.forEach(function(button){
     button.addEventListener('click', function(){
