@@ -26,7 +26,7 @@
     <ul class="value-list">
         <div class="mass">
             <li class="values">MASS FROM:</li>
-            <select name="" id="from" onchange="convertMassUnit(); convertTempUnit()">
+            <select name="" id="from">
                 <option value="kilograms">kilograms</option>
                 <option value="grams">grams</option>
                 <option value="ounces">ounces</option>
@@ -36,7 +36,7 @@
                 <option value="tons">tons</option>
             </select>
             <li class="values">TO:</li>
-            <select name="" id="convert-to" onchange="convertMassUnit(); convertTempUnit()">
+            <select name="" id="convert-to">
                 <option value="kilograms">kilograms</option>
                 <option value="grams">grams</option>
                 <option value="ounces">ounces</option>
@@ -51,12 +51,13 @@
     </ul>
     <p class="outcome">RESULT</p>
     <div class="input">
-        <input type="text" placeholder="Input Value Here">
+        <input type="text" placeholder="Input Value Here" class="mass-check">
     
     </div>
 
 
 <script src="script.js"></script>
 <script src="temp.js"></script>
+
 </body>
 </html>

@@ -5,6 +5,23 @@ const inputValue = document.querySelector('input');
 let buttons = document.querySelectorAll('.units')
 let values = document.querySelectorAll('.values')
 
+convert.addEventListener('change', function(){
+    if(values[0].innerHTML === 'MASS FROM:'){
+        convertMassUnit()
+    } else if(values[0].innerHTML === 'TEMP FROM:'){
+        convertTempUnit()
+    }
+})
+
+converted.addEventListener('change', function(){
+    if(values[0].innerHTML === 'MASS FROM:'){
+        convertMassUnit()
+    } else if(values[0].innerHTML === 'TEMP FROM:'){
+        convertTempUnit()
+    }
+})
+
+
 // convert to mass conversion
 buttons[0].addEventListener('click', function(){
     convert.innerHTML = `
@@ -26,8 +43,12 @@ buttons[0].addEventListener('click', function(){
                 <option value="tons">tons</option>
     `
     values[0].innerHTML = 'MASS FROM:'
-    convertMassUnit()
+    inputValue.value = ''
+    result.innerHTML = 'RESULT'
     inputValue.placeholder = 'Input Value Here'
+    
+    
+    
 })
 buttons.forEach(function(button){
     button.addEventListener('click', function(){
@@ -40,18 +61,10 @@ buttons.forEach(function(button){
     })
 })
 
-    // MASS
-
-
-// massButton.addEventListener('click', function(){
-//     tempButton.classList.remove('clicked')
-//     lengthButton.classList.remove('clicked')
-//     timeButton.classList.remove('clicked')
     
-// })
 
 
-        function convertMassUnit (){
+        function convertMassUnit(){
             if (convert.value === 'kilograms' && converted.value === 'kilograms'){
             let outcome = Number(inputValue.value) * 1;
             result.innerText = outcome + ' ' + converted.value;
@@ -217,18 +230,26 @@ buttons.forEach(function(button){
 
         };
 
-
-    inputValue.addEventListener('keyup', function (){
-        if(isNaN(inputValue.value*5)){
-            result.innerHTML = 'Please Input Numbers Only!!!'
-        }
-        else{
-            convertMassUnit()
-        }
+    if(values[0].innerHTML === 'MASS FROM:'){
+        inputValue.addEventListener('keyup', function (){
+            if(isNaN(inputValue.value*5)){
+                result.innerHTML = 'please input numbers only!!!'
+            }else {
+                convertMassUnit()
+            }
         
     });
+    // } else {
+    //     inputValue.addEventListener('keyup', function (){
+    //     convertTempUnit()
+    // });
+    }
+    
 
 
 
     //TEMPERATURES
+
+
+    
 
