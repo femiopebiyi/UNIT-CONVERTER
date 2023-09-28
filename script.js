@@ -3,13 +3,34 @@ const converted = document.querySelector('#convert-to')
 let result = document.querySelector('p');
 const inputValue = document.querySelector('input');
 let buttons = document.querySelectorAll('.units')
-// let tempButton = document.querySelector('.temp-button')
-// let lengthButton = document.querySelector('.length-button')
-// let timeButton = document.querySelector('.time-button')
+let values = document.querySelectorAll('.values')
 
+// convert to mass conversion
+buttons[0].addEventListener('click', function(){
+    convert.innerHTML = `
+    <option value="kilograms">kilograms</option>
+                <option value="grams">grams</option>
+                <option value="ounces">ounces</option>
+                <option value="pounds">pounds</option>
+                <option value="us-tons">US tons</option>
+                <option value="uk-tons">UK tons</option>
+                <option value="tons">tons</option>
+    `
+    converted.innerHTML = `
+    <option value="kilograms">kilograms</option>
+                <option value="grams">grams</option>
+                <option value="ounces">ounces</option>
+                <option value="pounds">pounds</option>
+                <option value="us-tons">US tons</option>
+                <option value="uk-tons">UK tons</option>
+                <option value="tons">tons</option>
+    `
+    values[0].innerHTML = 'MASS FROM:'
+    convertMassUnit()
+})
 buttons.forEach(function(button){
     button.addEventListener('click', function(){
-        button.classList.toggle('clicked')
+        button.classList.add('clicked')
         buttons.forEach(function(otherButton){
             if(otherButton !== button){
                 otherButton.classList.remove('clicked')
@@ -29,7 +50,7 @@ buttons.forEach(function(button){
 // })
 
 
-        function convertUnit (){
+        function convertMassUnit (){
             if (convert.value === 'kilograms' && converted.value === 'kilograms'){
             let outcome = Number(inputValue.value) * 1;
             result.innerText = outcome + ' ' + converted.value;
@@ -198,10 +219,10 @@ buttons.forEach(function(button){
 
     inputValue.addEventListener('keyup', function (){
         if(isNaN(inputValue.value*5)){
-            result.innerHTML = 'Please Input Number Only!!!'
+            result.innerHTML = 'Please Input Numbers Only!!!'
         }
         else{
-            convertUnit()
+            convertMassUnit()
         }
         
     });

@@ -26,7 +26,7 @@
     <ul class="value-list">
         <div class="mass">
             <li class="values">MASS FROM:</li>
-            <select name="" id="from" onchange="convertUnit()">
+            <select name="" id="from" onchange="convertMassUnit(); convertTempUnit()">
                 <option value="kilograms">kilograms</option>
                 <option value="grams">grams</option>
                 <option value="ounces">ounces</option>
@@ -36,7 +36,7 @@
                 <option value="tons">tons</option>
             </select>
             <li class="values">TO:</li>
-            <select name="" id="convert-to" onchange="convertUnit()">
+            <select name="" id="convert-to" onchange="convertMassUnit(); convertTempUnit()">
                 <option value="kilograms">kilograms</option>
                 <option value="grams">grams</option>
                 <option value="ounces">ounces</option>
@@ -57,5 +57,6 @@
 
 
 <script src="script.js"></script>
+<script src="temp.js"></script>
 </body>
 </html>
