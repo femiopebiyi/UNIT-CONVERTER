@@ -14,7 +14,7 @@ buttons[1].addEventListener('click', function(){
     <option value="kelvin">Kelvin</option>
     `
     values[0].innerHTML = 'TEMP FROM:'
-    result.innerHTML = 'RESULT'
+    result.innerHTML = 0 + ' ' + converted.value
     inputValue.value = ''
 
     

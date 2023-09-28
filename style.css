@@ -81,16 +81,18 @@ select{
 input{
     height: 100%;
     background-color: #87CEEB;
-    
+    font-size: 20px;
 }
 input::placeholder{
     font-weight: bold;
     color: black;
     text-align: center;
+    font-size: 16px;
 }
 textarea::placeholder{
     font-weight: bold;
     text-align: center;
+    font-size: 6px;
 }
 textarea{
     height: 100%;

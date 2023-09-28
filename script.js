@@ -44,8 +44,8 @@ buttons[0].addEventListener('click', function(){
     `
     values[0].innerHTML = 'MASS FROM:'
     inputValue.value = ''
-    result.innerHTML = 'RESULT'
-    inputValue.placeholder = 'Input Value Here'
+    result.innerHTML = 0 + ' ' + converted.value
+    
     
     
     
@@ -65,6 +65,9 @@ buttons.forEach(function(button){
 
 
         function convertMassUnit(){
+            if (inputValue.value === ''){
+                result.innerHTML = 'RESULT'
+            }
             if (convert.value === 'kilograms' && converted.value === 'kilograms'){
             let outcome = Number(inputValue.value) * 1;
             result.innerText = outcome + ' ' + converted.value;
