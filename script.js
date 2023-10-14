@@ -18,7 +18,9 @@ converted.addEventListener('change', function(){
         convertMassUnit()
     } else if(values[0].innerHTML === 'TEMP FROM:'){
         convertTempUnit()
-    }
+    } else if(values[0].innerHTML === 'TIME FROM:'){
+        convertTime()
+    } 
 })
 
 
