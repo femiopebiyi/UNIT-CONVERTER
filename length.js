@@ -5,7 +5,7 @@ const lengthsObject = {
   "meter": "m",           // "m" represents meters
   "centimeter": "cm",     // "cm" represents centimeters
   "millimeter": "mm",     // "mm" represents millimeters
-  "nautical-Mile": "NM",   // "NM" represents nautical miles
+  "N-Mile": "NM",   // "NM" represents nautical miles
   "kilometer": "km",     // "km" represents kilometers
   "mile": "mi"            // "mi" represents miles
 };
@@ -24,6 +24,7 @@ while (convert.options.length > 0) {
 
 buttons[2].addEventListener("click", ()=>{
   values[0].innerHTML = 'LENGTH FROM:'
+  // values[0].classList.add("length")
     inputValue.value = ''
     addLength(convert);
     addLength(converted);
