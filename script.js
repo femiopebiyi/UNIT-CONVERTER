@@ -10,6 +10,8 @@ convert.addEventListener('change', function(){
         convertMassUnit()
     } else if(values[0].innerHTML === 'TEMP FROM:'){
         convertTempUnit()
+    } else if (values[0].innerHTML === 'LENGTH FROM:'){
+        convertLength()
     }
 })
 
@@ -20,13 +22,14 @@ converted.addEventListener('change', function(){
         convertTempUnit()
     } else if(values[0].innerHTML === 'TIME FROM:'){
         convertTime()
-    } 
+    } else if (values[0].innerHTML === 'LENGTH FROM:'){
+        convertLength()
+    }
 })
 
 
-// convert to mass conversion
-buttons[0].addEventListener('click', function(){
-    convert.innerHTML = `
+function addMass(){
+convert.innerHTML = `
     <option value="kilograms">kilograms</option>
                 <option value="grams">grams</option>
                 <option value="ounces">ounces</option>
@@ -47,8 +50,15 @@ buttons[0].addEventListener('click', function(){
     values[0].innerHTML = 'MASS FROM:'
     inputValue.value = ''
     result.innerHTML = 0 + ' ' + converted.value
+}
+
+addMass()
+
+// convert to mass conversion
+buttons[0].addEventListener('click', function(){
     
     
+    addMass()
     
     
 })
